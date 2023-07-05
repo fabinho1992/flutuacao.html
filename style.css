@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+.container{
+    text-align: center;
+}
+
+img{
+    width: 500px;
+    transform: translateY(0px);
+    animation: animacao 5s infinite;
+    
+
+}
+
+@keyframes animacao{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-40px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.botao{
+    width: 200px;
+    padding: 1rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    color: brown;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: rgb(117, 110, 110);
+    border: none;
+    border-radius: 5px;
+    
+
+}
+
+.botao:hover{
+    background-color: brown;
+    color: rgb(117, 110, 110);
+    
+}
+
+.hide{
+    animation: float 5s infinite;
+}
+
+@keyframes float{
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(-60px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
